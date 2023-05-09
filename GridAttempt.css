@@ -1,0 +1,76 @@
+body { 					/*every page needs this*/
+margin: 0 auto; 		/*every page needs this*/
+max-width: 1300px; 
+background-color: #efeff7;		/*every page needs this*/
+}
+
+* {						/*every page needs this*/
+	margin: 0px;       /*every page needs this*/
+	padding: 0px;			/*every page needs this*/
+	box-sizing: border-box;		/*every page needs this*/
+}
+
+
+.topcontainer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;    /*this won't work on .gx because .gx is not layout*/
+	
+	background-color: #fdbe33;
+	justify-content: space-around;
+}
+
+
+.gx {
+	font-size: 3rem;
+	text-align: left;
+	font-family: 'Bruno Ace SC', cursive;
+	color: #030f27;
+	margin: 0px;
+	padding: 0px 0px 0px 5px;
+}
+
+
+.btn {font-size: 1rem;
+	padding: 15px;
+	margin: 10px;
+	border-radius: 15px;
+}
+
+
+/*when making a NAV make sure the 'nav-container' & list-container 
+is a 'class or id' and not just an HTML element, flex won't respond 
+and it took a min*/
+/*so in essence you want a layout container (parent) built in HTML with a 'CLASS'
+  then you want to display: flex; in the .class you created and set layout standards
+  then the individual styling on the (child)
+  .topcontainer = parent(layout)
+  .gx   = child(styling)
+  .btn  = child(styling) 
+
+
+/*
+.nav-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	background-color: #030f27;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+.list-container {
+	display: flex;
+	list-style: none;
+	background-color: #030f27;
+	font-size: 1em;
+	justify-content: right;
+	padding: 10px 25px 10px 25px;
+	color: #ffffff;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+.list-item {
+	padding: 0px 20px 0px 20px;
+}*/
